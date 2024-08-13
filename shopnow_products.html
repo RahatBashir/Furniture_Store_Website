@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop-now</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    
+<header>
+    <div class="logo">Comfy <span>Home</span></div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+         <ul class="navbar">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#">Shop Now</a></li>
+             <!-- <li><a href="#arrival">New Arrivals</a></li> -->
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="#blog">Blogs</a></li>
+             <li><a href="contact_us.html">Contact Us</a></li>
+         </ul>
+         <div class="header-action-style">
+            <a title="Login/Register" href="login.html"><i class='bx bx-user-circle' style="font-size: 30px; margin-left: 140px;"></i></a>
+          </div>
+
+     <div class="header-action-style">
+        <a title="cart" href="javascript:void(0);" onclick="toggleCart()">
+          <i class='bx bx-cart' style="font-size: 30px;"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+
+
+      <div class="cart-container" id="cart-container">
+        <div class="cart-header">
+          <span>Shopping Cart</span>
+          <a href="javascript:void(0);" onclick="toggleCart()"><i class='bx bx-x'></i></a>
+        </div>
+        <ul id="cart-items"></ul>
+      </div>
+     <!-- <button type="button" class="btn btn-secondary" id="btn_login" >Login/Register</button> -->
+ </header>
+
+ <section class="shop" >
+    <div class="nothome-text">
+        <h1><Span>Explore Endless Possibilities</Span> And Dive <br>into Our <span>Unique Collection</span></h1>
+        <a href="shopnow_products.html#product_shoping" class="btn">Shop Now</a>
+    </div>
+</section>
+
+  <div class="container" id="product_shoping">
+        <h3 class="text-center" style="margin-top: 50px;">TREANDLY PRODUCTS</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card1.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Sofa</h3>
+                        <p class="card-text text-center">$1000.50</p>
+                        <div class=" text-center" id="btn3"><button onclick="addToCart('Best Sofa', 1000.50)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card2.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Sofa</h3>
+                        <p class="card-text text-center">$100.50</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('New Sofa', 100.50)">Add to Cart</button></div>
+                        <!-- <div id="btn3"><button>Shop Now</button></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card3.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Chair</h3>
+                        <p class="card-text text-center">$300.20</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('New Chair', 300.20)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card4.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Modern Chair</h3>
+                        <p class="card-text text-center">$500.50</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('Modern Chair', 500.50)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card5.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Chair</h3>
+                        <p class="card-text text-center">$200.50</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('Best Chair', 200.50)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card6.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Sofa Chair</h3>
+                        <p class="card-text text-center">$100.50</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('Sofa Chair', 100.50)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card7.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Table Chair</h3>
+                        <p class="card-text text-center">$150.50</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('Table Chair', 1500.50)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card8.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Hanging Chair</h3>
+                        <p class="card-text text-center">$500.60</p>
+                        <div class="text-center" id="btn3"><button onclick="addToCart('Hanging Chair', 500.60)">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h1 class="text-center">Comfy <span>Home</span></h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright 2024. All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Designed By <a href="#">Rahat Bashir</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    let cartItems = [];
+let cartCount = 0;
+
+function addToCart(productName, price) {
+  cartItems.push({ productName, price });
+  cartCount++;
+  document.getElementById('cart-count').innerText = cartCount;
+}
+
+function removeCartItem(index) {
+  cartItems.splice(index, 1);
+  cartCount--;
+  document.getElementById('cart-count').innerText = cartCount;
+  displayCartItems();
+}
+
+function toggleCart() {
+  let cartContainer = document.getElementById('cart-container');
+  if (cartContainer.style.display === 'block') {
+    cartContainer.style.display = 'none';
+  } else {
+    cartContainer.style.display = 'block';
+    displayCartItems();
+  }
+}
+
+function displayCartItems() {
+  let cartItemsList = document.getElementById('cart-items');
+  cartItemsList.innerHTML = '';
+  cartItems.forEach((item, index) => {
+    let li = document.createElement('li');
+    li.innerText = `${item.productName} - $${item.price}`;
+    let removeBtn = document.createElement('button');
+    removeBtn.innerText = 'Remove';
+    removeBtn.onclick = function() { removeCartItem(index); };
+    li.appendChild(removeBtn);
+    cartItemsList.appendChild(li);
+  });
+}
+
+</script>

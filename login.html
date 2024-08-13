@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+
+  
+</head>
+<body>
+  <div class="login-container">
+    <button type="button" class="btn btn-secondary" style="background-color: green; top: 10px; right: 10px;" onclick="redirectToIndex()">Home</button>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <p>Don't have an account? <button type="button" class="btn btn-secondary" onclick="redirectToRegister()">Register</button></p>
+    </form>
+  </div>
+
+  <script>
+    function redirectToRegister() {
+
+      window.location.href = "register.html";
+    }
+
+    function redirectToIndex() {
+
+window.location.href = "Index.html";
+}
+    $(document).ready(function() {
+      $('#loginForm').submit(function(event) {
+        event.preventDefault();
+        var username = $('#username').val();
+        var password = $('#password').val();
+        
+        // Here, you can perform further actions like AJAX request for authentication
+        
+        alert("Username: " + username + "\nPassword: " + password);
+      });
+    });
+  </script>
+</body>
+</html>

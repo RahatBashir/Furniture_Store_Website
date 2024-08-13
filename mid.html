@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <style>
+
+        header{
+            background: blueviolet;
+            display: flex;
+            height: 80px;
+            padding: 18px 100px;
+            font-weight: 500;
+            font-size: 24px;
+            
+        }
+
+        .logo{
+            font-weight: 500;
+            color: white;
+            
+        }
+
+        .logo span{
+            color: yellow;
+        }
+
+        .home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/bg_furniture6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment:fixed;
+    display: flex;
+    align-items: center;
+}
+
+.home-text h1{
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.home-text p{
+    font-size: 15px;
+   margin-left: 50px; 
+
+}
+
+.home-text span{
+    color:var(blue);
+}
+
+.btn{
+    color: #fff;
+    margin-left: 50px;
+    padding: 10px 14px;
+    background: blue;
+    border-radius: 0.3rem;
+    font-size: 14px;    
+}
+
+.btn:hover{
+    background: #8fc53d;
+}
+btn1 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1 button:hover{
+    background-color: greenyellow;
+}
+card{
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+  }
+
+  #footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+
+#footer h1 span{
+    color: blue;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Furniture<span> X</span></div>
+    </header>
+
+    <section class="home" >
+        <div class="home-text">
+            <h1><Span>Let's Make</Span> Your Home <br>A Place <span>Of Comfort</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate excepturi quae saepe quos! Sint quae fugit dolor cupiditate modi et accusamus asperiores officiis, sequi atque commodi officia itaque reprehenderit.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <div class="container" id="product_shopping">
+        <h3 class="text-center" style="margin-top: 50px;">PRODUCT</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-12 py-12 py-md-0">
+                <div class="card" id="c">
+                    <img src="./img/card4.png" alt="Modern Chair" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Modern Chair</h3>
+                        <p class="card-text text-center">$500.50</p>
+                        <strong>Description:</strong>
+                        <p class="card-description">
+                            The Modern Chair is designed for both style and comfort. Its sleek and contemporary design adds a touch of elegance to any room. Crafted with high-quality materials, it offers durability and long-lasting support. Whether you're lounging, working, or entertaining, this chair provides the perfect blend of functionality and aesthetics. Elevate your space with the Modern Chair today!
+                            <br><br>
+                            <strong>Specifications:</strong>
+                            <ul>
+                                <li>Dimensions: 30" x 25" x 32"</li>
+                                <li>Weight: 20 </li>
+                                <li>Color Options: Black, White, Gray</li>
+                                <li>Technical Specifications: seat, wooden frame, metal legs</li>
+                            </ul>
+                        </p>
+                        <div class="text-center" id="btn1"><button >Buy Now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer id="footer">
+        <h1 class="text-center">Furniture <span>X</span></h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright 2024. All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Designed By <a href="#">Rahat Bashir</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

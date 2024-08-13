@@ -1,0 +1,64 @@
+body {
+    background-color: #8e9eab;
+}
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  
+ 
+}
+
+.container p{
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+
+
+.card-body{
+     background-color: #2a2b38;
+;
+}
+
+.card-title{
+    color: white;
+}
+
+.form-group{
+    color: white;
+}
+
+.btn-primary{
+    margin-top: 20px;
+    display: block;
+    margin-left: 200px;
+}
+
+.btn-primary:hover {
+    background-color: #495057;
+    color: #fff;
+  }
+
+.btn-secondary {
+    background-color: #d15259;
+    color: #fff;
+    width: 90px;
+    margin-right: 20px;
+    
+  }
+  .btn-secondary:hover {
+    background-color: #1c354e;
+    color: #fff;
+  }
+
+  .form-group ,form-control{
+    border-radius: 40px;
+  }
